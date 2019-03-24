@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>align-content</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #main1 {
+            display: flex;
+        }
+
+        #center {
+            width: 150px;
+            height: 700px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        #stretch {
+            width: 150px;
+            height: 700px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+
+        #flex-start {
+            width: 150px;
+            height: 700px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        #flex-end {
+            width: 150px;
+            height: 700px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+
+        #space-between {
+            width: 150px;
+            height: 700px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        #space-around {
+            width: 150px;
+            height: 700px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+
+        #initial {
+            width: 150px;
+            height: 700px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: initial;
+        }
+
+        #inherit {
+            width: 150px;
+            height: 700px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: inherit;
+        }
+
+        #main-div {
+            width: 150px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href='./111index.html'>home</a><br>
+        display: flex(弹性布局)<br>
+        flex-wrap: wrap(必要的时候拆行或拆列)<br>
+        align-content: center(对齐弹性盒的元素)
+    </div>
+
+    <div id="main1">
+
+        <div id="center">
+            align-content: center(居中)
+            <div id='main-div' style="background-color:coral;"></div>
+            <div id='main-div' style="background-color:lightblue;"></div>
+            <div id='main-div' style="background-color:pink;"></div>
+        </div>
+
+        <div id="stretch">
+            align-content: stretch(延伸,默认值)
+            <div id='main-div' style="background-color:coral;"></div>
+            <div id='main-div' style="background-color:lightblue;"></div>
+            <div id='main-div' style="background-color:pink;"></div>
+        </div>
+
+        <div id="flex-start">
+            align-content: flex-start(起始)
+            <div id='main-div' style="background-color:coral;"></div>
+            <div id='main-div' style="background-color:lightblue;"></div>
+            <div id='main-div' style="background-color:pink;"></div>
+        </div>
+
+        <div id="flex-end">
+            align-content: flex-end(结束)
+            <div id='main-div' style="background-color:coral;"></div>
+            <div id='main-div' style="background-color:lightblue;"></div>
+            <div id='main-div' style="background-color:pink;"></div>
+        </div>
+
+        <div id="space-between">
+            align-content: space-between(内间隙)
+            <div id='main-div' style="background-color:coral;"></div>
+            <div id='main-div' style="background-color:lightblue;"></div>
+            <div id='main-div' style="background-color:pink;"></div>
+        </div>
+
+        <div id="space-around">
+            align-content: space-around(空白周边)
+            <div id='main-div' style="background-color:coral;"></div>
+            <div id='main-div' style="background-color:lightblue;"></div>
+            <div id='main-div' style="background-color:pink;"></div>
+        </div>
+
+        <div id="initial">
+            align-content: initial(默认值)
+            <div id='main-div' style="background-color:coral;"></div>
+            <div id='main-div' style="background-color:lightblue;"></div>
+            <div id='main-div' style="background-color:pink;"></div>
+        </div>
+
+        <div id="inherit">
+            align-content: inherit(父元素继承该属性)
+            <div id='main-div' style="background-color:coral;"></div>
+            <div id='main-div' style="background-color:lightblue;"></div>
+            <div id='main-div' style="background-color:pink;"></div>
+        </div>
+    </div>
+</body>
+</html>

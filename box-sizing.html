@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box-sizing</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #app {
+            width: 400px;
+            height: 800px;
+            background-color: rgb(177, 153, 153);
+            align-content: center;
+            border: 2px solid rgb(209, 23, 85);
+        }
+
+        #content-box {
+            box-sizing: content-box;
+            width: 400px;
+            height: 200px;
+            background-color: rgb(208, 214, 121);
+            border: 4px solid rgb(14, 6, 26);
+            padding: 10px;
+        }
+
+        #border-box {
+            box-sizing: border-box;
+            width: 400px;
+            height: 200px;
+            background-color: #fff;
+            border: 4px solid rgb(14, 6, 26);
+            padding: 20px;
+        }
+
+        #inherit {
+            box-sizing: inherit;
+            padding: 20px;
+            height: 200px;
+            background-color: rgb(92, 224, 218);
+            border: 4px solid rgb(14, 6, 26);
+        }
+    </style>
+</head>
+
+<body>
+    <a href='./111index.html'>home</a><br>
+    box-sizing(盒模型)
+    <div id="app">
+        宽度:400px
+        <br>
+        <div id="content-box">content-box
+            <br>
+            宽度:408px(内容400+边距4*2)
+            <br>
+            在指定宽高之外绘制元素的内边距和边框。
+        </div>
+        <div id="border-box">border-box
+            <br>
+            宽度:400px,border:4px,padding:20px;
+            <br>在指定border,padding宽高内进行绘制
+        </div>
+        <div id="inherit">inherit
+            <br>
+            宽度:400px(没有填写实际宽度)
+            <br>
+            内边距:20px;
+            <br>
+            边框:4px*2;
+            <br>
+            从父元素继承 box-sizing 属性的值。
+            <br>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>align-items</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #app {
+            display: flex;
+        }
+
+        .border1 {
+
+            width: 220px;
+        }
+
+        #stretch {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: stretch;
+        }
+
+        #center {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+
+        #flex-start {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #flex-end {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        #space-between {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: space-between;
+        }
+
+        #baseline {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: baseline;
+        }
+
+        #initial {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: initial;
+        }
+
+        #inherit {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: initial;
+        }
+
+        .ppp {
+            height: 60px;
+        }
+
+        #main-div {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <a href='./111index.html'>home</a><br>
+
+    display: flex(弹性布局)<br>
+    align-items: (居中对齐)<br>
+    <hr>
+    <div id="app">
+        <div class="border1">
+            <div class="ppp">align-items:stretch (默认值,拉伸以适应容器。)</div>
+            <div id="stretch">
+                <div id='main-div' style="background-color:coral;">RED</div>
+                <div id='main-div' style="background-color:lightblue;">BLUE</div>
+                <div id='main-div' style="background-color:lightgreen;">Green div with more content.</div>
+            </div>
+        </div>
+
+        <div class="border1">
+            <div class="ppp">align-items:center (居中)</div>
+            <div id="center">
+                <div id='main-div' style="background-color:coral;">RED</div>
+                <div id='main-div' style="background-color:lightblue;">BLUE</div>
+                <div id='main-div' style="background-color:lightgreen;">Green div with more content.</div>
+            </div>
+        </div>
+
+        <div class="border1">
+            <div class="ppp">align-items:flex-start (顶端)</div>
+            <div id="flex-start">
+                <div id='main-div' style="background-color:coral;">RED</div>
+                <div id='main-div' style="background-color:lightblue;">BLUE</div>
+                <div id='main-div' style="background-color:lightgreen;">Green div with more content.</div>
+            </div>
+        </div>
+
+        <div class="border1">
+            <div class="ppp">align-items:flex-end (低端)</div>
+            <div id="flex-end">
+                <div id='main-div' style="background-color:coral;">RED</div>
+                <div id='main-div' style="background-color:lightblue;">BLUE</div>
+                <div id='main-div' style="background-color:lightgreen;">Green div with more content.</div>
+            </div>
+        </div>
+
+        <div class="border1">
+            <div class="ppp">align-items:baseline(基本还是顶端水平对齐)</div>
+            <div id="baseline">
+                <div id='main-div' style="background-color:coral;">RED</div>
+                <div id='main-div' style="background-color:lightblue;">BLUE</div>
+                <div id='main-div' style="background-color:lightgreen;">Green div with more content.</div>
+            </div>
+        </div>
+
+        <div class="border1">
+            <div class="ppp">align-items:initial(默认)</div>
+            <div id="initial">
+                <div id='main-div' style="background-color:coral;">RED</div>
+                <div id='main-div' style="background-color:lightblue;">BLUE</div>
+                <div id='main-div' style="background-color:lightgreen;">Green div with more content.</div>
+            </div>
+        </div>
+
+        <div class="border1">
+            <div class="ppp">align-items:inherit(默认)</div>
+            <div id="inherit">
+                <div id='main-div' style="background-color:coral;">RED</div>
+                <div id='main-div' style="background-color:lightblue;">BLUE</div>
+                <div id='main-div' style="background-color:lightgreen;">Green div with more content.</div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

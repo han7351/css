@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>animation</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        a {
+
+            text-decoration: none;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove1 5s infinite;
+        }
+
+        @keyframes mymove1 {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href='./111index.html'>home</a>
+    <div id="app">
+        这里是内容
+    </div>
+
+</body>
+
+</html>
