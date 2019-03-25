@@ -18,15 +18,122 @@
             text-decoration: none;
         }
 
-        div {
+        .div {
+            width: 50%;
+
+        }
+
+        .bao {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #animation {
             width: 100px;
             height: 100px;
             background: red;
             position: relative;
-            animation: mymove1 5s infinite;
+            animation: animation 5s infinite;
         }
 
-        @keyframes mymove1 {
+        @keyframes animation {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 200px;
+            }
+        }
+
+        #animation-delay {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: animation-delay 5s infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes animation-delay {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 200px;
+            }
+        }
+
+        #animation-direction {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: animation-direction 5s infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes animation-direction {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 200px;
+            }
+        }
+
+        #animation-duration {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: animation-duration infinite;
+            animation-duration: 2s
+        }
+
+        @keyframes animation-duration {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 200px;
+            }
+        }
+
+        #animation-fill-mode {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: animation-fill-mode 2s;
+            animation-iteration-count: 2;
+            animation-fill-mode: both;
+        }
+
+        @keyframes animation-fill-mode {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 200px;
+            }
+        }
+
+        #animation-iteration-count {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: animation-fill-mode 2s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animation-iteration-count {
             from {
                 left: 0px;
             }
@@ -39,10 +146,82 @@
 </head>
 
 <body>
-    <a href='./111index.html'>home</a>
-    <div id="app">
-        这里是内容
+    <a href='./111index.html'>home</a> <br>
+    position: relative(相对定位) <br>
+    animation <br>
+    animation-delay(延迟) <br>
+    animation-direction(方向) <br>
+    animation-duration(执行时间) <br>
+    animation-fill-mode(方式) <br>
+    animation-iteration-count(执行次数) <br>
+    animation-name(名字) <br>
+    animation-play-state(暂停) <br>
+    animation-timing-function(开始到结束以相同的速度播放动画) <br>
+    <hr>
+    <div class="bao">
+        <div class="div">
+            position: relative;<br>
+            animation: animation 5s infinite;
+            <div id="animation"></div> <br>
+            <hr>
+
+            animation-delay:2s(延迟2秒执行)<br>
+            <div id="animation-delay"></div>
+            <hr>
+
+            animation-direction: normal(默认值)<br>
+            animation-direction:reverse(反向播放)<br>
+            *animation-direction:alternate(135正向,246反向)<br>
+            animation-direction:alternate-reverse(135反向,246正向)<br>
+            animation-direction:initial(默认值)<br>
+            animation-direction:inherit(父元素继承该属性)<br>
+            <div id="animation-direction"></div>
+            <hr>
+
+            animation-duration:2s(2秒内完成)<br>
+            <div id="animation-duration"></div>
+            <hr>
+        </div>
+
+        <div class="div">
+            animation-fill-mode: none(完成之后初始位置)<br>
+            animation-fill-mode: forwards(结束位置)<br>
+            animation-fill-mode: backwards(脑瓜子疼,想不明白)<br>
+            animation-fill-mode: both(遵循 forwards 和 backwards 的规则)<br>
+            animation-fill-mode: initial(默认值)<br>
+            animation-fill-mode: inherit(从父元素继承)<br>
+            <div id="animation-fill-mode"></div> <br>
+            <hr>
+
+            animation-iteration-count:次数<br>
+            animation-iteration-count:infinite(无限次)<br>
+            <div id="animation-iteration-count"></div>
+            <hr>
+
+            animation-name: keyframename(名字,没名字没法执行)<br>
+            <div id="animation"></div>
+            <hr>
+
+            animation-play-state:paused<br>
+            animation-play-state:running;<br>
+            <div id="animation"></div>
+            <hr>
+
+            animation-timing-function: linear(匀速)<br>
+            animation-timing-function: ease(慢快慢)<br>
+            animation-timing-function: ease-in(低速开始)<br>
+            animation-timing-function: ease-out()<br>
+            animation-timing-function: ease-in-out(低速结束)<br>
+            animation-timing-function: cubic-bezier(n,n,n,n)(自定义)<br>
+            <div id="animation"></div>
+            <hr>
+        </div>
+
     </div>
+
+
+
+
 
 </body>
 
