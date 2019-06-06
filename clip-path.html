@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clip path</title>
+    <style type="text/css">
+        body {
+            margin: 20px auto;
+            text-align: center;
+            font-family: 'Lato';
+            max-width: 640px;
+        }
+
+        h1 {
+            margin-bottom: 100px;
+            font-size: 1.8em;
+        }
+
+        div {
+            display: inline-block;
+            margin: 50px 0px;
+            width: 250px;
+            height: 250px;
+            border-radius: 200px;
+            filter: grayscale(0.9);
+            cursor: pointer;
+        }
+
+        div:hover {
+            filter: none;
+        }
+
+        div:hover .text {
+            opacity: 1;
+        }
+
+        .text {
+            position: absolute;
+            background: rgba(200, 0, 0, 0.5);
+            padding: 20px 0;
+            top: 90px;
+            width: 250px;
+            opacity: 0;
+            text-align: center;
+            color: white;
+            font-size: 1.4em;
+        }
+
+        .left .text {
+            background: rgba(0, 0, 200, .5);
+        }
+
+        .right .text {
+            background: rgba(200, 100, 0, 0.5);
+        }
+
+        .bottom .text {
+            background: rgba(0, 200, 0, 0.5);
+        }
+
+        .top {
+            background: url('http://t.imgbox.com/KXaGvTFB.jpg');
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-size: contain;
+            position: relative;
+            left: -125px;
+            top: -130px;
+        }
+
+        .left {
+            background: url('http://t.imgbox.com/LHPFYSYE.jpg');
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-size: contain;
+            position: relative;
+        }
+
+        .right {
+            background: url('http://t.imgbox.com/tlgvPjwn.jpg');
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-size: contain;
+            position: relative;
+            top: -352px;
+            left: 256px;
+        }
+
+        .bottom {
+            background: url('http://t.imgbox.com/R7h6VtZr.jpg');
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            background-size: contain;
+            position: relative;
+            top: -220px;
+            left: -126px;
+        }
+    </style>
+</head>
+<body>
+<h1>Images clipped with <code>clip-path</code> Property</h1>
+<div class="left"><p class="text">SPORTS</p></div>
+<div class="top"><p class="text">TECHNOLOGY</p></div>
+<div class="right"><p class="text">FOOD</p></div>
+<div class="bottom"><p class="text">NATURE</p></div>
+</body>
+</html>
